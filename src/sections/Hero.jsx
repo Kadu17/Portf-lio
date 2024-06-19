@@ -1,26 +1,37 @@
 import React from 'react'
 import styles from '../sections/HeroStyles.module.css';
 import ProfileImg from '../assets/Profile-Kadu.jpeg';
-import themeIcon from '../assets/sun.png';
-import LinkedinIcon from '../assets/linkedin.png';
-import GithubIcon from '../assets/github.png';
-import InstagramIcon from '../assets/instagram.png';
+import sun from '../assets/sun.svg';
+import moon from '../assets/moon.svg'
+import LinkedinDark from '../assets/linkedin-dark.svg';
+import LinkedinLight from '../assets/linkedin-light.svg'
+import GithubDark from '../assets/github-dark.svg';
+import GithubLight from '../assets/github-light.svg';
+import CV from '../assets/Apresentação.pdf'
 import { useTheme } from '../Common/ThemeContext';
 
 function Hero() {
   const {theme, toggleTheme} = useTheme(); 
 
+  const themeIcon = theme === 'light' ? sun : moon;
+  const LinkedinIcon = theme === 'light' ? LinkedinLight : LinkedinDark;
+  const GithubIcon = theme === 'light' ? GithubLight : GithubDark;
+
+
   return <section id="hero" className={styles.container}>
     <div className={styles.colorModeContainer}>
+      <div className={styles.lua}>
+      <img
+        className={styles.colorMode}
+        src={themeIcon}
+        alt='Color mode icon'
+        onClick={toggleTheme}
+       />
+      </div>
       <img 
         className={styles.hero}
         src={ProfileImg} 
         alt="Profile picture" 
-       />
-       <img
-        className={styles.colorMode}
-        src={themeIcon}
-        alt='Color mode icon'
        />
        <div className={styles.info}>
         <h1>
@@ -36,20 +47,18 @@ function Hero() {
             <a href="https://www.github.com/" target='_blank'>
                 <img src={GithubIcon} alt="Github icon" />
             </a>
-            <a href="https://www.instagram.com/" target='_blank'>
-                <img src={InstagramIcon} alt="Instagram icon" />
-            </a>
         </span>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Magni neque temporibus iste atque delectus cumque magnam libero et eligendi ad.
-            Perspiciatis porro obcaecati recusandae labore consequatur exercitationem eius
-            excepturi ad?
+        <p className={styles.description}>
+        With a passion for
+        developing modern React
+        web apps for commercial
+        businesses.
         </p>
-        {/* <a href={CV}>
+        <a href={CV}>
             <button className="hover" download>
                 Resume
             </button>
-        </a> */}
+        </a>
        </div>
     </div>
     </section>
