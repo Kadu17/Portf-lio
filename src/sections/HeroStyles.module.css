@@ -19,7 +19,7 @@
 
     span{
         display: flex;
-        gap: 25px;
+        gap: 30px;
         justify-content: center;
 
         a{
@@ -64,7 +64,7 @@
     position: relative;
 }
 
-.colotMode{
+.colorMode{
     position: absolute;
     right: 0;
     width: 25px;
@@ -74,9 +74,9 @@
     cursor: pointer;
 }
 
-.description{
-    max-width: 24ch;
-}
+/* .description{
+    max-width: 50ch;
+} */
 
 .info{
     display: flex;
@@ -84,3 +84,20 @@
     justify-content: center;
     gap: 20px;
 }
+
+@media (width >= 800px) {
+    .container {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      }
+    }
+  
+  @media (width >= 1400px) {
+    .container {
+      .hero {
+        width: 700px;
+      }
+    }
+  }

@@ -12,25 +12,30 @@ function Projects() {
     <section id='projects' className={styles.container}>
       <h1 className='sectionTitle'>PROJECTS</h1>
       <div className={styles.projectsContainer}>
-        <ProjectCard src={bank}/>
+        <ProjectCard src={bitcoin}
+            link={'https://github.com/Kadu17/KashBank-int'}
+            h3='KashBank'
+            p='Banco Digital'
+        />
 
-        {/* <a href="https://meinung.gitbook.io/meinung-docs" target='_blank'>
-            <img className='hover' src={meinung} alt='Meinung Logo' />
-            <h3>Meinung</h3>
-            <p>Plataforma de Gerenciamento de feedbacks</p>
-        </a>
+        <ProjectCard src={flutter}
+            link={'https://github.com/Kadu17/LoginFlutter'}
+            h3='SNKRS'
+            p='App E-Commerce'
+        />
 
-        <a href="https://eulle.vercel.app/" target='_blank'>
-            <img className='hover' src={eulle} alt='Meinung Logo' />
-            <h3>Eulle</h3>
-            <p>Automação</p>
-        </a>
+        <ProjectCard src={meinung}
+            link={'https://meinung.gitbook.io/meinung-docs'}
+            h3='Meinung'
+            p='Plataforma de gerenciamento de feedback'
+        />
 
-        <a href="https://github.com/Kadu17/LoginFlutter" target='_blank'>
-            <img className='hover' src={flutter} alt='Meinung Logo' />
-            <h3>SNKRS</h3>
-            <p>App E-Commerce</p>
-        </a> */}
+        <ProjectCard src={eulle}
+            link={'https://eulle.vercel.app/'}
+            h3='Eulle'
+            p='Automação'
+        />
+        
       </div>
     </section>
   )

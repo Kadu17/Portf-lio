@@ -41,20 +41,17 @@ function Hero() {
         </h1> 
         <h2>Frontend  Developer</h2>
         <span>
-            <a href="https://www.linkedin.com/" target='_blank'>
+            <a href="https://www.linkedin.com/in/carlos-barbosa-a89426252/" target='_blank'>
                 <img src={LinkedinIcon} alt="Linkedin icon" />
             </a>
-            <a href="https://www.github.com/" target='_blank'>
+            <a href="https://github.com/Kadu17/" target='_blank'>
                 <img src={GithubIcon} alt="Github icon" />
             </a>
         </span>
         <p className={styles.description}>
-        With a passion for
-        developing modern React
-        web apps for commercial
-        businesses.
+        Passion for web development with React.
         </p>
-        <a href={CV}>
+        <a href={CV} target='_blank'>
             <button className="hover" download>
                 Resume
             </button>
