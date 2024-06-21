@@ -15,7 +15,7 @@ function Projects() {
         <ProjectCard src={bitcoin}
             link={'https://github.com/Kadu17/KashBank-int'}
             h3='KashBank'
-            p='Banco Digital'
+            p='Digital Bank'
         />
 
         <ProjectCard src={flutter}
@@ -27,13 +27,13 @@ function Projects() {
         <ProjectCard src={meinung}
             link={'https://meinung.gitbook.io/meinung-docs'}
             h3='Meinung'
-            p='Plataforma de gerenciamento de feedback'
+            p='Feedback Management Platform'
         />
 
         <ProjectCard src={eulle}
             link={'https://eulle.vercel.app/'}
             h3='Eulle'
-            p='Automação'
+            p='Automation'
         />
         
       </div>
