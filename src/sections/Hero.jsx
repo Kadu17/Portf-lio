@@ -9,6 +9,7 @@ import GithubDark from '../assets/github-dark.svg';
 import GithubLight from '../assets/github-light.svg';
 import CV from '../assets/Apresentação.pdf'
 import { useTheme } from '../Common/ThemeContext';
+import Typewriter from "typewriter-effect"
 
 function Hero() {
   const {theme, toggleTheme} = useTheme(); 
@@ -38,8 +39,9 @@ function Hero() {
             Carlos
             <br />
             Barbosa
-        </h1> 
-        <h2>Frontend  Developer</h2>
+        </h1>
+            <h2>Frontend  Developer</h2>
+
         <span>
             <a href="https://www.linkedin.com/in/carlos-barbosa-a89426252/" target='_blank'>
                 <img src={LinkedinIcon} alt="Linkedin icon" />

@@ -5,6 +5,7 @@ import bitcoin from '../assets/bitcoin.png'
 import meinung from '../assets/Meinung.png'
 import eulle from '../assets/Eulle.png'
 import flutter from '../assets/Flutter.png'
+import Front from '../assets/desinfeccao.png'
 import ProjectCard from './ProjectCard'
 
 function Projects() {
@@ -34,6 +35,12 @@ function Projects() {
             link={'https://eulle.vercel.app/'}
             h3='Eulle'
             p='Automation'
+        />
+
+        <ProjectCard src={Front}
+            link={'https://front-equip.vercel.app/'}
+            h3='Front-Equip'
+            p='product catalog'
         />
         
       </div>

@@ -60,6 +60,15 @@
     } 
 }
 
+
+
+.TypeEffect {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
 .colorModeContainer{
     position: relative;
 }
