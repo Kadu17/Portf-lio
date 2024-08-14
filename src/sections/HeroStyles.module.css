@@ -83,10 +83,6 @@
     cursor: pointer;
 }
 
-/* .description{
-    max-width: 50ch;
-} */
-
 .info{
     display: flex;
     flex-direction: column;
@@ -94,6 +90,20 @@
     gap: 20px;
 }
 
+.inlineTypewriter {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  
+  .typewriterText {
+    display: inline;
+  }
+  
+  .typewriterCursor {
+    display: inline;
+  }
+  
 @media (width >= 800px) {
     .container {
       flex-direction: row-reverse;
