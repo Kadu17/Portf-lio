@@ -7,7 +7,7 @@ import LinkedinDark from '../assets/linkedin-dark.svg';
 import LinkedinLight from '../assets/linkedin-light.svg';
 import GithubDark from '../assets/github-dark.svg';
 import GithubLight from '../assets/github-light.svg';
-import CV from '../assets/Apresentação.pdf';
+import CV from '../assets/CV-Carlos Barbosa.pdf';
 import { useTheme } from '../Common/ThemeContext';
 import Typewriter from 'typewriter-effect';
 
